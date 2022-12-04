@@ -1,6 +1,15 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+//Supports the need of Node JS
+const util = require("util");
 
+//write README file
+const generateAsyncFile = util.promisify(fs.writeFile);
+
+//Accesses generateReadMe file 
+const generateReadMe = require("./utils/generateReadMe.js");
+
+//function to prompt user to answer the questions below
 let askUser = () => {
     return inquirer.prompt(questions);
 }
@@ -63,3 +72,23 @@ const questions =
                 message: 'Please select a license for your project:'
             }
         ]
+// to Initilize the program i added an async function
+async function init() {
+    try {
+        //waits for the user to answer the questions before console logging the answers
+        const answer = await askUser();
+        console.log(answer);
+    
+        const readMe = generateReadMe(answer);
+    
+        //generates the readme if everything goes smoothly, otherwise it will create an error
+        generateAsyncFile("README-Test.md", readMe).then(function() {
+            console.log("Successfully created a README-Test.md");
+        });
+    }
+    //creates an error if its not fully completed
+    catch (err) {
+        console.log(err);
+    }
+    }
+    init();
