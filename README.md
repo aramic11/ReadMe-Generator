@@ -7,7 +7,7 @@ I had to understand the logic behind the code so it could be properly used to as
 ## Links
 Github: https://github.com/aramic11/ReadMe-Generator
 
-Video: README Vid.mp4
+Video: https://github.com/aramic11/ReadMe-Generator/blob/main/README%20Vid.mp4
 ## Screenshot
 ![Screen Shot 2022-12-03 at 8 50 31 PM](https://user-images.githubusercontent.com/113563367/205470560-689e303f-e1f8-4960-a33e-e9f601ed03e6.png)
 ![Screen Shot 2022-12-03 at 8 51 46 PM](https://user-images.githubusercontent.com/113563367/205470566-4bb7a75c-4cc3-49d0-b265-6f9f5aa45681.png)
