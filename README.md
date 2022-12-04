@@ -7,5 +7,5 @@ I had to understand the logic behind the code so it could be properly used to as
 ## Links
 Github: https://github.com/aramic11/ReadMe-Generator
 
-
+Video: README Vid.mp4
 ## Screenshot
